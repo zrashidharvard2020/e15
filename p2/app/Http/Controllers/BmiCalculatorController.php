@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 
 class BmiCalculatorController extends Controller
 {
@@ -14,9 +15,13 @@ class BmiCalculatorController extends Controller
     public function index()
     {
         //
-        return view('bmi-calculator.index');
+        return redirect("/bmi");
     }
 
+    public function bmiHome()
+    {
+        return view('bmi-calculator.bmi');
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -44,23 +49,30 @@ class BmiCalculatorController extends Controller
      * @return BMI value and 
      */
 
-    public function mbiCalculate(Request $request)
+    public function bmiCalculate(Request $request)
     {
-        $heightInFeet = $request->input('heightFeet');
-        $heightInInches = $request->input('heightIn');
-        $weight = $request->input('weightLb');
+        $heightInFeet = $request->input('heightInFeet');
+        $heightInInches = $request->input('heightInInches');
+        $weight = $request->input('weightInPounds');
        
-        $request->validate([
-            'heightFeet' => 'required|numeric',
-            'heightIn' => 'required|numeric',
-            'weightLb' => 'required|numeric'
+        // $validator = $request->validate([
+            
+        // ]);
+        $validator = Validator::make($request->all(), [
+            'heightInFeet' => 'required|numeric|min:2|max:8',
+            'heightInInches' => 'required|numeric|min:0|max:11',
+            'weightInPounds' => 'required|numeric|min:3|max:500'
         ]);
-        dd($request->all());
+        
+        if ($validator->fails()) {           
+            return redirect('/bmi')->withInput($request->all)->withErrors($validator);
+        } 
+        
         $height = ($heightInFeet*12)+$heightInInches;
         $bmi = ($weight/($height*$height))*703;
-             
-        return view('bmi-calculator.index',[
-            'bmi' => $bmi]);
+        
+		
+        return redirect('/bmi')->with('bmi',$bmi);
     }
 
     /**

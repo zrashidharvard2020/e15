@@ -12,5 +12,5 @@
 */
 
 Route::get('/','BmiCalculatorController@index');
-
-Route::any('bmi/calculate','BmiCalculatorController@mbiCalculate');
+Route::get("/bmi",'BmiCalculatorController@bmiHome');
+Route::any('/bmi/calculate','BmiCalculatorController@bmiCalculate');
