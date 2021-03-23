@@ -57,7 +57,8 @@
             padding-left:30px;
             margin-bottom: 10px;
         }
-        .input-container input{
+        .input-container input,
+	.input-container select{
             width:  95%;
             border:1px solid #ddd;
             border-radius: 5px;
