@@ -1,0 +1,72 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+main.py-4 {
+    width: 90%;
+    margin: auto;
+}
+.product-container .itme-row {
+    display: grid;
+    grid-template-columns: 10% 50% 15% 25%;
+    width: 100%;
+    grid-gap: 5px;
+}
+.product-container a.add-button {
+    display: inline-block;
+    background: #0d53d2;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.product-container .deleteProduct span.material-icons {
+    color: #da2a2a;
+    cursor: pointer;
+}
+.action-buttons{
+    display:flex;
+}
+.error{
+    color: #da2a2a;
+}
+.form-field-container{
+    display: grid;
+    grid-template-columns: 150px 250px auto;
+    grid-row-gap:5px;
+}
+a.back{
+    float: right;
+    background: #2248b1;
+    width: 80px;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+}
+.customer-row{
+    display: grid;
+    grid-template-columns: 10% 30% 30% 15% 15%;
+    width: 100%;
+    grid-gap: 5px;
+}
+
+.invoice-row{
+    display: grid;
+    grid-template-columns: 10% 30% 30% 15% 15%;
+    width: 100%;
+    grid-gap: 5px;
+}
+div#add-more {
+    width: 150px;
+    background: #1426a7;
+    text-align: center;
+    color: #fff;
+    margin: 10px 0px;
+    padding: 5px;
+    border-radius: 8px;
+}
