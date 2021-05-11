@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<h1>Invoice List</h1> 
+<h1 dusk='invoice-heading' >Invoice List</h1> 
 <div class="product-container">
     
     <a class="add-button" href="/invoices/create"> Add new invoice</a>  

@@ -2,10 +2,12 @@
 
 namespace App;
 
+//use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class InvoiceItems extends Model
 {
+    //use HasFactory;
     /**
      * The table associated with the model.
      *

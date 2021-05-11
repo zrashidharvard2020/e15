@@ -10952,6 +10952,7 @@ main.py-4 {
   grid-template-columns: 10% 50% 15% 25%;
   width: 100%;
   grid-gap: 5px;
+  margin-bottom: 5px;
 }
 
 .product-container a.add-button {
@@ -10997,6 +10998,7 @@ a.back {
   grid-template-columns: 10% 30% 30% 15% 15%;
   width: 100%;
   grid-gap: 5px;
+  margin-bottom: 5px;
 }
 
 .invoice-row {
@@ -11004,6 +11006,7 @@ a.back {
   grid-template-columns: 10% 30% 30% 15% 15%;
   width: 100%;
   grid-gap: 5px;
+  margin-bottom: 5px;
 }
 
 div#add-more {
@@ -11014,5 +11017,10 @@ div#add-more {
   margin: 10px 0px;
   padding: 5px;
   border-radius: 8px;
+}
+
+.action-buttons a {
+  display: inline-block;
+  padding: 5px 10px;
 }
 

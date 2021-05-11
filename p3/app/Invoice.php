@@ -2,10 +2,12 @@
 
 namespace App;
 
+//use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class Invoice extends Model
 {
+    //use HasFactory;
     
     /**
      * Get the customer that owns the invoice.

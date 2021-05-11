@@ -47,6 +47,7 @@
 <a class="back" href="/invoices">Back</a>
 <script type="application/javascript">
     var products = {!! json_encode($products) !!};
+    var mode = 'create';
 </script>
 <script type="application/javascript" src = "/js/jquery-3.5.1.min.js"></script>
 <script type="application/javascript" src = "/js/additems.js"></script>

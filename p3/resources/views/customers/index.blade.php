@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-<h1>Customers</h1> 
+<h1 dusk="customer-heading">Customers</h1> 
 <div class="product-container">  
     <a class="add-button" href="/customers/create"> Add new customer</a>  
     <div class="customer-row">

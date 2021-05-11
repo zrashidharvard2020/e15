@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-<h1>Products</h1> 
+<h1 dusk="product-heading">Products</h1> 
 <div class="product-container">  
     <a class="add-button" href="/products/create"> Add new product</a>  
     <div class="itme-row">
