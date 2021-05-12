@@ -14,10 +14,10 @@
             
         </div>
         <div class="form-field-container">
-            <label>Invoice Date:</label><div>{{$invoice->invoice_date}}</div><div></div>
+            <label>Invoice Date:</label><div>{{date('m/d/Y',strtotime($invoice->invoice_date))}}</div><div></div>
         </div>
         <div class="form-field-container">
-            <label>Invoice Amount:</label><div>{{$invoice->invoice_amount}}</div><div></div>
+            <label>Invoice Amount:</label><div> $ {{$invoice->invoice_amount}}</div><div></div>
             
         </div>
         <div id="item-details">
@@ -26,9 +26,9 @@
                 <tr class="headerRow">
                     <th>Sl#<th>
                     <th>Product Name<th>
-                    <th>Unit Price<th>
+                    <th>Unit Price ($)<th>
                     <th>Quantity<th>
-                    <th>Amount<th>
+                    <th>Amount ($)<th>
                 </tr>
                 @foreach($invoice->items as $index => $item)
                     <tr class="bodyRow">

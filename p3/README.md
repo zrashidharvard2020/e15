@@ -1,16 +1,14 @@
-*Any instructions/notes in italics should be removed from the template before submitting*
-
 # Project 3
 + By: *Zahid Rashid*
 + Production URL: <http://e15p3.zrashid1970.xyz>
 
 ## Feature summary
-*It is simple Grocery Sales System where a customer come to cash counter with his product then the counter man will create a sales invoice the respectiv products those are being selected by the customer. this system has following featurs*
+It is simple Invoice Creationg for a Small Grocery Store. A customer will come to the cash counter with the products, he/she would likes to buy. The cash counter employee will create a sales invoice based on the respective products which are being selected by the customer. This system has following features
 
-+ option for register new cash counter man and log in
-+ only the authenticate user (cash counter man) can add/update/delete the product  (product name, unit price)
-+ only the authenticate user (cash counter man) can add/update/delete the customer (customer name, address and phone no)
-+ only the authenticate user (cash counter man) can add/update/delete/view invoices 
++ option for registering new cash counter employee and able to give them a login access
++ only the authenticated user (cash counter employee) is able to add/update/delete the product  (product name, unit price)
++ only the authenticated user (cash counter employee) is able to add/update/delete the customer (customer name, address and phone no)
++ only the authenticated user (cash counter employee) is able to add/update/delete/view invoices 
   
 ## Database summary
 

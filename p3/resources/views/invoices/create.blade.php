@@ -26,8 +26,8 @@
             @endif
         </div>
         <div class="form-field-container">
-            <label>Invoice Amount</label>
-            <input type="text" name="invoice_amount" id="invoice_amount" value="{{ old('invoice_amount') }}">
+            <label>Invoice Amount ($)</label>
+            <input type="text" name="invoice_amount" id="invoice_amount" value="{{ old('invoice_amount') }}" readonly>
             @if($errors->get('invoice_amount'))
                 <div class='error'>{{ $errors->first('invoice_amount') }}</div>
             @endif

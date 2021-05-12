@@ -14,7 +14,7 @@
         <div class="itme-row">
             <div>{{$product->id}}</div>
             <div>{{$product->product_name}}</div>
-            <div>{{$product->unit_price}}</div>
+            <div>$ {{$product->unit_price}}</div>
             <div class="action-buttons">
                 <a href="/products/{{$product->id}}/edit">
                     <span class="material-icons">edit</span>

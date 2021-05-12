@@ -9,7 +9,7 @@
         <div>Invoice Id</div>
         <div>Invoice Date</div>
         <div>Customer Name</div>
-        <div>Invice Amount</div>
+        <div>Invoice Amount</div>
         <div>Actions</div>
     </div>
     @foreach($invoices as $invoice)
@@ -18,9 +18,9 @@
     @endphp
         <div class="invoice-row">
             <div>{{$invoice->id}}</div>
-            <div>{{$invoice->invoice_date}}</div>
+            <div>{{date('m/d/Y',strtotime($invoice->invoice_date))}}</div>
             <div>{{$invoice->customer->customer_name}}</div>
-            <div>{{$invoice->invoice_amount}}</div>
+            <div>$ {{$invoice->invoice_amount}}</div>
             <div class="action-buttons">
                 <a href="/invoices/{{$invoice->id}}/edit">
                     <span class="material-icons">edit</span>

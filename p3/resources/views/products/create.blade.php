@@ -14,7 +14,7 @@
             @endif
         </div>
         <div class="form-field-container">
-            <label>Unit Price</label>
+            <label>Unit Price ($)</label>
             <input dusk='price-input'type="text" name="unit_price" value="{{ old('unit_price') }}">
             @if($errors->get('unit_price'))
                 <div class='error'>{{ $errors->first('unit_price') }}</div>

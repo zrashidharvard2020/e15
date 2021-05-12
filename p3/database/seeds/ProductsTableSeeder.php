@@ -18,7 +18,6 @@ class ProductsTableSeeder extends Seeder
             ['Apple', 5.40],
             ['Mango', 4.30],
             ['Lychee', 2.00],
-            ['dragon fruit', 6.00],
         ];
 
         $count = count($products);

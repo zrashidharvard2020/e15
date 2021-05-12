@@ -13,12 +13,9 @@ class CustomersTableSeeder extends Seeder
     {
         # Array of customer data to add
         $customers = [
-            ['Zahid', 'Dhaka','025'],
-            ['Flaming', 'New york','025'],
-            ['Sharuv', 'Kalkata','025'],
-            ['Rupak', 'Lahore','025'],
-            ['Malianga', 'Srilanka','025'],
-            ['Clop', 'Dallas','025'],
+            ['Zahid Rashid', '5313 Serene Hills Drive, Austin, TX 78733','5129477936'],
+            ['Mike Tyson', '100 N Lake Hills Drive','5129477937'],
+            ['Sarita Rashid', '6819 Telluride Trail, Austin, TX 78749','5129478938'],
         ];
 
         $count = count($customers);

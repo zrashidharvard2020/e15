@@ -41,9 +41,9 @@ $(document).ready(function(){
 		$(`<tr class="headerRow">
 			<th>Sl#<th>
 			<th>Product Name<th>
-			<th>Unit Price<th>
+			<th>Unit Price ($)<th>
 			<th>Quantity<th>
-			<th>Amount<th>
+			<th>Amount ($)<th>
 			</tr>`).appendTo(tableContainer);
 		addRow(tableContainer,1);
 	}else{

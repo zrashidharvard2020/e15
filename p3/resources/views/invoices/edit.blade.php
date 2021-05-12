@@ -27,8 +27,8 @@
             @endif
         </div>
         <div class="form-field-container">
-            <label>Invoice Amount</label>
-            <input type="text" name="invoice_amount" id="invoice_amount" value="{{ $invoice->invoice_amount ?? old('invoice_amount') }}">
+            <label>Invoice Amount ($)</label>
+            <input type="text" name="invoice_amount" id="invoice_amount" value="{{ $invoice->invoice_amount ?? old('invoice_amount') }}" readonly>
             @if($errors->get('invoice_amount'))
                 <div class='error'>{{ $errors->first('invoice_amount') }}</div>
             @endif
@@ -39,9 +39,9 @@
                 <tr class="headerRow">
                     <th>Sl#<th>
                     <th>Product Name<th>
-                    <th>Unit Price<th>
+                    <th>Unit Price ($)<th>
                     <th>Quantity<th>
-                    <th>Amount<th>
+                    <th>Amount ($)<th>
                 </tr>
                 @foreach($invoice->items as $index => $item)
                     <tr class="bodyRow">
